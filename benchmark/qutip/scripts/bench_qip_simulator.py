@@ -3,12 +3,12 @@ import numpy as np
 from qutip import tensor, basis
 
 
-@pytest.fixture(params=[5, 10, 20])
+@pytest.fixture(params=[5, 20])
 def n_qubits(request):
     return request.param
 
 
-@pytest.fixture(params=[2, 5, 10, 50])
+@pytest.fixture(params=[5, 50])
 def depth(request):
     return request.param
 
